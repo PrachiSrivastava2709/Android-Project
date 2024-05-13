@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".scheduleForm">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD SCHEDULE"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+        android:textAlignment="center"
+        android:background="#739e05"
+        />
+
+    <EditText
+        android:id="@+id/medName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Medicine Name"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:inputType="text"
+        />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:checked="false"
+        android:onClick="OnToggleClicked" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/freq"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Frequency"-->
+<!--        android:textSize="20dp"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:inputType="number"-->
+<!--        />-->
+
+
+        <Button
+            android:id="@+id/addTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD REMINDER"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:onClick="addTime"
+            android:background="#739e05"
+            />
+
+</LinearLayout>
